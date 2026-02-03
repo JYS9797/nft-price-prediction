@@ -1,0 +1,22 @@
+data:
+  root_dir: nft_data_moralis
+  prices_csv: nft_prices.csv
+  collections_csv: collections_info_5000.csv
+  train_csv: train_nft.csv
+  val_csv: val_nft.csv
+
+train:
+  batch_size: 8
+  lr: 1.0e-5
+  epochs: 3
+  seed: 42
+
+model:
+  num_classes: 3
+  max_text_len: 128
+  text_model: bert-base-uncased
+  image_model: google/vit-base-patch16-224-in21k
+
+output:
+  checkpoints_dir: checkpoints
+  metrics_dir: outputs
