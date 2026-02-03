@@ -11,6 +11,12 @@ and is **not** designed for automated trading or market manipulation.
 - Image encoder: ViT (`google/vit-base-patch16-224-in21k`)
 - Fusion: attention-based fusion + collection features (floor/avg) → 3-class classifier
 
+## Model Overview
+
+<p align="center">
+  <img src="docs/ppm_overview.svg" alt="NFT Price Prediction Model Overview" width="700"/>
+</p>
+
 ## Repo structure
 - `scripts/prepare_data.py`: build train/val CSVs (paths, prices, labels)
 - `scripts/train.py`: train and validate the model
